@@ -1,0 +1,323 @@
+*{
+  margin:0px;
+  padding: 0px;
+  /* overflow-x: hidden; */
+}
+
+.video{
+  width: 100%;
+  position: sticky;
+  top:0px;
+}
+
+.overlay{
+  height: 1620px;
+  width: 100%;
+  text-align: center;
+  color:transparent;
+  background: black;
+  mix-blend-mode: multiply;
+  position: absolute;
+  overflow: hidden;
+  z-index: 2;  
+}
+ 
+.overlay-text{
+  margin-top:480px;
+  font-size: 100px;
+  overflow: hidden;
+  position: relative;
+  color: white;
+}
+
+
+
+
+/***********ram css**************/
+body {
+  background-color: rgba(0, 0, 0, 1) !important;
+}
+body {
+  background: rgba(0, 0, 0, 1) !important;
+  font-family: 'Pangea Trial' !important;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: 'Pangea Trial';
+  src: url('/assets/fonts/PangeaTrial-Bold.woff');
+  src: url('/assets/fonts/PangeaTrial-SemiBold.eot') format('embedded-opentype'), url('/assets/fonts/PangeaTrial-SemiBold.woff2') format('woff2'), url('/assets/fonts/PangeaTrial-SemiBold.woff') format('woff'), url('/assets/fonts/PangeaTrial-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pangea Trial';
+  src: url('/assets/fonts/PangeaTrial-SemiBold.woff'), url('/assets/fonts/PangeaTrial-SemiBold.eot') format('embedded-opentype'), url('/assets/fonts/PangeaTrial-SemiBold.woff2') format('woff2'), url('/assets/fonts/PangeaTrial-SemiBold.woff') format('woff'), url('/assets/fonts/PangeaTrial-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pangea Trial';
+  src: url('/assets/fonts/PangeaTrial-Bold.eot');
+  src: url('/assets/fonts/PangeaTrial-Bold.eot') format('embedded-opentype'), url('/assets/fonts/PangeaTrial-Bold.woff2') format('woff2'), url('/assets/fonts/PangeaTrial-Bold.woff') format('woff'), url('/assets/fonts/PangeaTrial-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pangea Trial';
+  src: url('/assets/fonts/PangeaTrial-Italic.eot');
+  src: url('/assets/fonts/PangeaTrial-Italic.eot') format('embedded-opentype'), url('/assets/fonts/PangeaTrial-Italic.woff2') format('woff2'), url('/assets/fonts/PangeaTrial-Italic.woff') format('woff'), url('/assets/fonts/PangeaTrial-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pangea Trial';
+  src: url('/assets/fonts/PangeaTrial-Medium.eot');
+  src: url('/assets/fonts/PangeaTrial-Medium.eot') format('embedded-opentype'), url('/assets/fonts/PangeaTrial-Medium.woff2') format('woff2'), url('/assets/fonts/PangeaTrial-Medium.woff') format('woff'), url('/assets/fonts/PangeaTrial-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pangea Trial';
+  src: url('/assets/fonts/PangeaTrial-SemiBoldItalic.eot');
+  src: url('/assets/fonts/PangeaTrial-SemiBoldItalic.eot') format('embedded-opentype'), url('/assets/fonts/PangeaTrial-SemiBoldItalic.woff2') format('woff2'), url('/assets/fonts/PangeaTrial-SemiBoldItalic.woff') format('woff'), url('/assets/fonts/PangeaTrial-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pangea Trial';
+  src: url('/assets/fonts/PangeaTrial-Light.eot');
+  src: url('/assets/fonts/PangeaTrial-Light.eot') format('embedded-opentype'), url('/assets/fonts/PangeaTrial-Light.woff2') format('woff2'), url('/assets/fonts/PangeaTrial-Light.woff') format('woff'), url('/assets/fonts/PangeaTrial-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pangea Trial';
+  src: url('/assets/fonts/PangeaTrial-BoldItalic.eot');
+  src: url('/assets/fonts/PangeaTrial-BoldItalic.eot') format('embedded-opentype'), url('/assets/fonts/PangeaTrial-BoldItalic.woff2') format('woff2'), url('/assets/fonts/PangeaTrial-BoldItalic.woff') format('woff'), url('/assets/fonts/PangeaTrial-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pangea Trial';
+  src: url('/assets/fonts/PangeaTrial-Regular.eot');
+  src: url('/assets/fonts/PangeaTrial-Regular.eot') format('embedded-opentype'), url('/assets/fonts/PangeaTrial-Regular.woff2') format('woff2'), url('/assets/fonts/PangeaTrial-Regular.woff') format('woff'), url('/assets/fonts/PangeaTrial-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pangea Trial';
+  src: url('/assets/fonts/PangeaTrial-SemiBold.eot');
+  src: url('/assets/fonts/PangeaTrial-SemiBold.eot') format('embedded-opentype'), url('/assets/fonts/PangeaTrial-SemiBold.woff2') format('woff2'), url('/assets/fonts/PangeaTrial-SemiBold.woff') format('woff'), url('/assets/fonts/PangeaTrial-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pangea Trial';
+  src: url('/assets/fonts/PangeaTrial-MediumItalic.eot');
+  src: url('/assets/fonts/PangeaTrial-MediumItalic.eot') format('embedded-opentype'), url('/assets/fonts/PangeaTrial-MediumItalic.woff2') format('woff2'), url('/assets/fonts/PangeaTrial-MediumItalic.woff') format('woff'), url('/assets/fonts/PangeaTrial-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pangea Trial';
+  src: url('/assets/fonts/PangeaTrial-LightItalic.eot');
+  src: url('/assets/fonts/PangeaTrial-LightItalic.eot') format('embedded-opentype'), url('/assets/fonts/PangeaTrial-LightItalic.woff2') format('woff2'), url('/assets/fonts/PangeaTrial-LightItalic.woff') format('woff'), url('/assets/fonts/PangeaTrial-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+#section {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.welcome h1 {
+  font-family: 'Pangea Trial';
+  font-size: 57.8px;
+  line-height: 81px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 3px;
+  color: #ffffff;
+}
+.welcome h6 {
+  font-size: 26px;
+  color: #9e9e9f;
+}
+ 
+.box{
+  flex:none;
+  width:100vw;
+  height: 100vh;
+}
+
+.why_inochef {
+  background: url(../images/why_bg.png) top right no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+}
+
+.center_align {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+.i_chef {
+  color: #ffed8c;
+  margin-left: 25pxpx;
+}
+.banner h1, .banner h2 {
+  text-transform: none;
+}
+.f-150 {
+  font-size: 150px !important;
+}
+.prclr {
+  color: #d9bc1c !important;
+}
+.ls12 {
+  letter-spacing: 8px;
+}
+.wclr {
+  color: #ffffff;
+}
+.fw300 {
+  font-weight: 300;
+}
+.f-40 {
+  font-size: 40px;
+}
+.ls8 {
+  letter-spacing: 8px;
+}
+.float-right {
+  float: right;
+}
+.lh80 {
+  line-height: 80px;
+}
+.mt20 {
+  margin-top: 20px;
+}
+
+
+.moving_train {
+  width: 5000px;
+  position: absolute;
+  left: 1920px;
+}
+
+.moving_train li {
+  float: left;
+  display: inline-block;
+  color: #fff;
+  /* width: 50%; */
+  margin-right: 50px;
+  padding: 50px 150px 150px 50px;
+}
+
+.moving_train li p {
+  width: 60%;
+}
+
+.moving_train li:first-child {
+  background: #28272c url(../../assets/images/mt_1.png) bottom right no-repeat;
+  background-size: contain;
+  border-radius: 50px;
+  padding: 50px 150px 150px 50px;
+}
+
+.oys {
+  overflow-x: scroll;
+}
+
+.moving_train li:nth-child(2) {
+  background: #699a57 url(../../assets/images/mt_2.png) top right no-repeat;
+  background-size: contain;
+  border-radius: 50px;
+  padding: 50px 250px 150px 50px;
+  background-position: 129% 26px;
+}
+
+.moving_train li:nth-child(3) {
+  background: #a81b34 url(../../assets/images/mt_3.png) bottom right no-repeat;
+  background-size: contain;
+  border-radius: 50px;
+  padding: 50px 500px 150px 50px;
+}
+
+.moving_train li:nth-child(4) {
+  background: #396a97 url(../../assets/images/mt_4.png) bottom right no-repeat;
+  background-size: contain;
+  border-radius: 50px;
+  padding: 50px 350px 150px 50px;
+}
+.moving_train li p {
+  width: 60%;
+}
+.moving_train h1 {
+    font-family: 'Pangea Trial';
+    font-size: 57.8px;
+    line-height: 81px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 3px;
+    color: #ffffff;
+}
+.sayno h1 {
+    font-family: 'Pangea Trial';
+    font-size: 57.8px;
+    line-height: 81px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 3px;
+    color: #ffffff;
+}
+#section_new {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+.how_it_works {
+  background: url(../../assets/images/how_it_works.png) top right no-repeat;
+  background-size: cover;
+  background-position: 0px !important;
+  max-width: 100%;
+}
